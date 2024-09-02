@@ -1,0 +1,11 @@
+ .name {
+ text-align: center;
+}
+:root {
+ --color-blue: #8DADA7;
+}
+body {
+  background-color: var(--color-blue);
+  text-align: center;
+  
+}
