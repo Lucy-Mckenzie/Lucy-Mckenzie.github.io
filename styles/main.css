@@ -1,11 +1,89 @@
- .name {
- text-align: center;
-}
 :root {
- --color-blue: #8DADA7;
-}
-body {
+  --color-blue: #406270;
+  --color-white: #FCF3E3;
+ }
+
+ body {
   background-color: var(--color-blue);
+  margin: 0;
+ }
+
+.home {
+  margin-top: 200px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20pt;
+  padding: 40px;
   text-align: center;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+nav {   
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0; 
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}    
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
   
+}
+
+.logo {
+  color: var(--color-white);     
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  flex: 1;
+}
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;          
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+
+}
+
+nav ul li {
+  margin: 0;     
+  
+}
+
+nav ul li a {
+  color: var(--color-white);          
+  text-decoration: none; 
+  font-size: 18px;  
+  padding: 8px 12px;     
+}
+
+nav ul li a:hover {
+  color: #8DADA7;      
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 8px 15px;
+  }
+  nav ul {
+ flex-direction: column;
+ align-items: center;
+  }
+  .home {
+    font-size: 10pt;
+  }
 }
