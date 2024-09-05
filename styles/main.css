@@ -1,7 +1,8 @@
 :root {
   --color-blue: #013D5A;
   --color-white: #FCF3E3;
-  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --color-hover: #F4A258;
+  --font: "Merriweather", serif;
  }
 
  body {
@@ -13,9 +14,9 @@
 .home {
   margin-top: 200px;
   font-family: var(--font);
-  font-weight: 100;
+  font-weight: 300;
   font-size: 30px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   text-align: center;
   color: var(--color-blue);
   max-width: 50%;
@@ -31,6 +32,7 @@
   text-align: center;
   flex: 1;
   font-family: var(--font);
+  font-weight: 300;
 }
 
 nav {   
@@ -43,7 +45,7 @@ nav {
   align-items: center;
   padding: 20px 50px;
   font-family: var(--font);
- 
+  font-weight: 300;
 }    
 
 
@@ -85,7 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #F4A258;      
+  color: var(--color-hover);      
 }
 
 
@@ -95,7 +97,7 @@ nav ul li a:hover {
   max-width: 100%;
 }
 
-.photos {
+#gallery {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -105,6 +107,40 @@ nav ul li a:hover {
   max-width: 100%;
 
 }
+h2 {
+  text-align: center;
+  font-style: italic;
+  font-family: var(--font);
+  font-weight: 300;
+}
+
+.arrow-container {
+  display: flex;            
+  justify-content: center;  
+  position: relative;       
+  margin-top: 20px;        
+}
+
+
+.arrow {
+  font-size: 40px;         
+  color: var(--color-blue); 
+  cursor: pointer;          
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.arrow:hover {
+  transform: scale(1.2);    
+  color: var(--color-hover); 
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
 
 @media (max-width: 768px) {
   nav {
