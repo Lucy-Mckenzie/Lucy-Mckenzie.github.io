@@ -97,6 +97,7 @@ nav ul li a:hover {
   box-sizing: border-box;
   max-width: 100%;
   height: auto; 
+ 
 }
 
 #gallery {
@@ -107,7 +108,7 @@ nav ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
-
+  object-fit: cover;
 }
 h2 {
   text-align: center;
@@ -128,7 +129,7 @@ h2 {
   font-size: 40px;         
   color: var(--color-blue); 
   cursor: pointer;          
-  transition: transform 0.3s ease-in-out; 
+  
 }
 
 
@@ -154,7 +155,7 @@ a {
   }
   .home {
     font-size: 26px;
-    margin-top: 150px;
+    margin-top: 150px
   }
   nav ul {
     flex-direction: column;
@@ -171,7 +172,23 @@ a {
     padding: 10px; 
   }
   .home {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 20px; 
+    padding-right: 60px;
+  }
+  h2 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .home {
+    font-size: 20px;
+    padding-right: 80px;
+  }
+  h2 {
+    font-size: 17px;
   }
 }
 
