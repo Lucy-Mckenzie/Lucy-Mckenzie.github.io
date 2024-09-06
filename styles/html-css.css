@@ -11,8 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
+  background-color: var(--color-white);
+   }
+
 
 .container {
   width: 60%;
@@ -47,9 +48,7 @@ ul {
   margin-left: 20px;
 }
 
- .body {
-  background-color: var(--color-white);
- }
+
  
 .logo {
   color: var(--color-white);     
