@@ -8,7 +8,7 @@
  body {
   background-color: var(--color-white);
   margin: 0;
-  border: 30px solid var(--color-blue);
+  border: 3vh solid var(--color-blue);
  }
 
 .home {
@@ -84,7 +84,6 @@ nav ul li a {
   padding: 8px 12px;     
   border: 2px solid var(--color-blue);
   border-radius: 30px;
-  transition: border-color 0.3s ease;
   box-sizing: border-box;
 }
 
@@ -97,6 +96,7 @@ nav ul li a:hover {
   border-radius: 10px;
   box-sizing: border-box;
   max-width: 100%;
+  height: auto; 
 }
 
 #gallery {
@@ -171,3 +171,4 @@ a {
     padding: 10px; 
   }
 }
+
