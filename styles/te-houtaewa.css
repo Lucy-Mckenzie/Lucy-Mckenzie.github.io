@@ -4,10 +4,10 @@
   --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
  .main {
-  margin-top: 80px
+  margin-top: 120px
  }
 
- .body {
+ body {
   background-color: var(--color-white);
  }
  
@@ -93,4 +93,9 @@ nav ul li a:hover {
   .nav-container {
     padding: 10px; 
   }
+}
+@media (max-width: 350px) {
+.main {
+  margin-top: 160px;
+}
 }

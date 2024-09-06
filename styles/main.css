@@ -170,5 +170,8 @@ a {
   .nav-container {
     padding: 10px; 
   }
+  .home {
+    font-size: 20px;
+  }
 }
 
