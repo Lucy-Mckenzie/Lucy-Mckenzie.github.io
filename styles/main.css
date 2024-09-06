@@ -46,6 +46,8 @@ nav {
   padding: 20px 50px;
   font-family: var(--font);
   font-weight: 300;
+  flex-wrap: wrap;
+  overflow-x: hidden; 
 }    
 
 
@@ -83,7 +85,7 @@ nav ul li a {
   border: 2px solid var(--color-blue);
   border-radius: 30px;
   transition: border-color 0.3s ease;
-
+  box-sizing: border-box;
 }
 
 nav ul li a:hover {
@@ -142,14 +144,30 @@ a {
 
 
 
-@media (min-width: 1361px) {
+@media (max-width: 1355px) {
   nav ul li a {
-    font-size: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
   }
   .logo {
-    font-size: 14px;
+    font-size: 16px;
   }
   .home {
-    font-size: 20px;
+    font-size: 26px;
+    margin-top: 150px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .nav-container {
+    padding: 10px; 
   }
 }
