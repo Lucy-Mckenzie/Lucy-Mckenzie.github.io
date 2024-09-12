@@ -43,7 +43,7 @@ nav {
   left: 0; 
   display: flex;
   align-items: center;
-  padding: 20px 50px;
+  padding:  50px;
   font-family: var(--font);
   font-weight: 300;
   flex-wrap: wrap;
@@ -53,11 +53,11 @@ nav {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   max-width: 1200px;
   margin: 20px auto;
   width: 100%;
+  
   
 }
 
@@ -66,21 +66,22 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;          
-  gap: 20px;
+  gap: 15px;
   flex: 1;
   justify-content: flex-end;
-
+  align-items: baseline;
 }
 
 nav ul li {
   margin: 0;     
-  
+ 
+ 
 }
 
 nav ul li a {
   color: var(--color-blue);          
   text-decoration: none; 
-  font-size: 18px;  
+  font-size: 16px;  
   padding: 8px 12px;     
   border-radius: 30px;
   box-sizing: border-box;
@@ -91,6 +92,69 @@ nav ul li a:hover {
   background-color: var(--color-blue);  
   color: var(--color-white);    
 }
+
+.dropdown {
+  position: relative;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.dropbtn {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font: var(--font);
+  font-weight: 300;
+}
+
+.dropbtn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.arrow-small {
+  font-size: 16px !important;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  min-width: 160px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  
+}
+
+.dropdown-content a {
+  color: var(--color-blue);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  color: var(--color-white);
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn .arrow-small {
+  transform: rotate(180deg);
+  color: var(--color-white)
+}
+
 
 
 .photo-1, .photo-2, .photo-3 {
@@ -111,6 +175,7 @@ nav ul li a:hover {
   max-width: 100%;
   object-fit: cover;
 }
+
 h2 {
   text-align: center;
   font-style: italic;
@@ -126,7 +191,7 @@ h2 {
 }
 
 
-.arrow {
+.arrow-big {
   font-size: 40px;         
   color: var(--color-blue); 
   cursor: pointer;          
@@ -134,7 +199,7 @@ h2 {
 }
 
 
-.arrow:hover {
+.arrow-big:hover {
   transform: scale(1.2);    
   color: var(--color-hover); 
 }
@@ -143,7 +208,6 @@ h2 {
 a {
   text-decoration: none;
 }
-
 
 
 @media (max-width: 1355px) {
