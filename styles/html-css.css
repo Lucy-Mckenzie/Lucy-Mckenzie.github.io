@@ -83,7 +83,7 @@ nav {
   max-width: 1200px;
   margin: 20px auto;
   width: 100%;
-  
+  margin-bottom: 200px;
   
 }
 
@@ -172,15 +172,14 @@ nav ul li a:hover {
   color: var(--color-white);
 }
 
-.dropdown:hover .dropdown-content {
-  display: inline-block;
+.dropdown:hover .dropdown-content  {
+  display: block;
 }
 
 .dropdown:hover .dropbtn .arrow-small {
   transform: rotate(180deg);
   color: var(--color-white)
 }
-
 
 
 

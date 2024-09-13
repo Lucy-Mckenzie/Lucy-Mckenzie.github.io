@@ -1,3 +1,10 @@
+
+:root {
+  --color-blue: #013D5A;
+  --color-white: #FCF3E3;
+  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
@@ -5,17 +12,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-white);
   }
   
   .container {
   width: 60%;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   text-align: center;
+  margin-top: 100px;
+  z-index: 1;
   }
   
-  h1, h2 {
+  h1:not(.logo), h2 {
   color: #333;
   text-decoration: underline;
   }
@@ -32,22 +42,23 @@ body {
     flex: 1;
     font-family: "Merriweather", serif;
     font-weight: 300;
-    
+    z-index: 2;
   }
   
   nav {   
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     top: 0;
     left: 0; 
     display: flex;
     align-items: center;
     padding:  50px;
-    font-family: var(--font);
+    font-family: "Merriweather", serif;
     font-weight: 300;
     flex-wrap: wrap;
     overflow-x: hidden; 
+    
   }    
   
   
@@ -57,7 +68,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     width: 100%;
-    
+    margin-bottom: 200px;
     
   }
   
@@ -93,7 +104,7 @@ body {
     color: var(--color-white);    
   }
   
-  .dropdown, .dropdown-hs {
+  .dropdown {
     position: relative;
     font-size: 16px;
     border-radius: 30px;
@@ -109,7 +120,7 @@ body {
     align-items: baseline;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font: var(--font);
+    font: "Merriweather", serif;
     font-weight: 300;
   }
   
@@ -146,7 +157,7 @@ body {
     color: var(--color-white);
   }
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content  {
     display: block;
   }
   
@@ -154,10 +165,6 @@ body {
     transform: rotate(180deg);
     color: var(--color-white)
   }
-  
-  
-  
-  
   
   
   @media (max-width: 1355px) {

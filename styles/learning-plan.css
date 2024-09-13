@@ -1,11 +1,21 @@
-body {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-line-height: 1.6;
-margin: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+:root {
+  --color-blue: #013D5A;
+  --color-white: #FCF3E3;
+  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  padding: 0 25px;
+  word-wrap: break-word;;
+  background-color: var(--color-white);
+   }
+
 
 .container {
 width: 60%;
@@ -13,9 +23,10 @@ text-align: center;
 padding: 20px;
 border-radius: 8px;
 text-align: center;
+margin-top: 100px;
 }
 
-h1, h2 {
+h1:not(.logo), h2 {
 color: #333;
 text-decoration: underline;
 }
@@ -44,7 +55,7 @@ nav {
   display: flex;
   align-items: center;
   padding:  50px;
-  font-family: var(--font);
+  font-family: "Merriweather", serif;
   font-weight: 300;
   flex-wrap: wrap;
   overflow-x: hidden; 
@@ -55,10 +66,9 @@ nav {
   display: flex;
   align-items: baseline;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 10px 20px;
   width: 100%;
-  
-  
+  margin-bottom: 200px;
 }
 
 nav ul {
@@ -93,7 +103,7 @@ nav ul li a:hover {
   color: var(--color-white);    
 }
 
-.dropdown, .dropdown-hs {
+.dropdown {
   position: relative;
   font-size: 16px;
   border-radius: 30px;
