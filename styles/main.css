@@ -93,7 +93,7 @@ nav ul li a:hover {
   color: var(--color-white);    
 }
 
-.dropdown {
+.dropdown, .dropdown-hs {
   position: relative;
   font-size: 16px;
   border-radius: 30px;
@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-  display: inline-block;
+  display: block;
 }
 
 .dropdown:hover .dropbtn .arrow-small {

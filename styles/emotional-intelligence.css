@@ -25,3 +25,159 @@ h1, h2 {
   color: #333;
   text-decoration: underline;
 }
+
+.logo {
+  color: var(--color-blue);     
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+  flex: 1;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  
+}
+
+nav {   
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0; 
+  display: flex;
+  align-items: center;
+  padding:  50px;
+  font-family: var(--font);
+  font-weight: 300;
+  flex-wrap: wrap;
+  overflow-x: hidden; 
+}    
+
+
+.nav-container {
+  display: flex;
+  align-items: baseline;
+  max-width: 1200px;
+  margin: 20px auto;
+  width: 100%;
+  
+  
+}
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;          
+  gap: 15px;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+nav ul li {
+  margin: 0;     
+ 
+ 
+}
+
+nav ul li a {
+  color: var(--color-blue);          
+  text-decoration: none; 
+  font-size: 16px;  
+  padding: 8px 12px;     
+  border-radius: 30px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--color-blue);  
+  color: var(--color-white);    
+}
+
+.dropdown, .dropdown-hs {
+  position: relative;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.dropbtn {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font: var(--font);
+  font-weight: 300;
+}
+
+.dropbtn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.arrow-small {
+  font-size: 16px !important;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  min-width: 160px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  
+}
+
+.dropdown-content a {
+  color: var(--color-blue);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  color: var(--color-white);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn .arrow-small {
+  transform: rotate(180deg);
+  color: var(--color-white)
+}
+
+
+
+
+
+
+@media (max-width: 1355px) {
+  nav ul li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .nav-container {
+    padding: 10px; 
+  }
+}
