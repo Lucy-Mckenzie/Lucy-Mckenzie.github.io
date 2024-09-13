@@ -35,18 +35,20 @@
     </div>
     </nav>
 
-    <div class="container">
+  <div class="container">
     <h1>Javascript and the dom</h1>
+  <div class="left">
     <h2>An analogy to describe JavaScript and its relationship to HTML and CSS. </h2>
     <p>I imagine a spy or superhero movie when movies were first made using stop motion and eventually short videos of everyday life. One of the most renowned early examples is Georges Méliès’ A Trip to the Moon, released in 1902—the tale of a group of astronomers who travel to the moon, encountering adventures along the way. The film features groundbreaking special effects, including innovative use of miniatures, hand-painted sets, and visual trickery.</p>
     <p>Nowadays, movies are on a whole other level, using visual and practical effects, complex simulations of physics, weather, computer-generated imagery, and events that would be impossible to film in real life. To name a few. 
     </p>
-    <p>I see the Javascript relationship to HTML and CSS, similar to the story of the innovation of movie making. Like early films were limited in effects, early web pages were static and basic (HTML and CSS). With the development of Javascript, we’ve been able to do so much, it enhances and changes the game in computing. </p>
+    <p>I see the <em>Javascript</em> relationship to <em>HTML</em> and <em>CSS</em>, similar to the story of the innovation of movie making. Like early films were limited in effects, early web pages were static and basic (HTML and CSS). With the development of Javascript, we’ve been able to do so much, it enhances and changes the game in computing. </p>
     <p>This is where JavaScript comes in for websites, just like CGI transformed movies, JavaScript took the web to a new level. Before JavaScript, websites were like posters, pretty but static. With JavaScript, they became like video games: interactive and dynamic, responding to what you do.</p>
     <h2>Explain control flow and loops using an example process from everyday life</h2>
     <p>Control flow works like our everyday life, going from start to finish, following a step to step process to get things done. </p>
-    <p>For example:</p>
-
+    </div> 
+    <strong><p>For example:</p></strong>
+ 
     
     <p> - Start: check if you have dirty clothes. </p>
     <p> - If yes: gather clothes. </p>
@@ -68,12 +70,13 @@
         }
       }
     </code></pre> 
-
+<div class="left">
 <p>As you go through your daily life everyday, you are essentially doing the same habits (loops) on repeat. In the same way control flow goes down the list executing the statements, and when it comes to a loop such as the one above that returns false, it simply does nothing and keeps making its way down to the bottom.</p>
 <h2>Describe what the DOM is and an example of how you might interact with it</h2>
 <p>The DOM (Document Object Model) is essentially a structured, hierarchical representation of your HTML page. It's like a tree where every HTML object becomes a node (imagine them as branches containing the elements in your HTML) that can be accessed and manipulated with javascript.</p>
-<p>For example:</p>
-<strong><p>HTML</p></strong>
+</div>
+<strong><p>For example:</p></strong>
+<em><p>HTML</p></em>
 
   <pre><code class="code">
     &lt;button id="button"&gt;This is a button&lt;/button&gt;
@@ -81,7 +84,7 @@
   </code></pre>
   
 
-  <strong><p>Javascript</p></strong>
+  <em><p>Javascript</p></em>
   <pre><code class="code">
     const button = document.getElementById("button");
     const text = document.getElementById("text");
@@ -93,9 +96,10 @@
    </code></pre>
 
   <h2>Explain the difference between accessing data from arrays and objects</h2>
-  <p>Both arrays and objects store data wether it be strings or numbers, this helps us to condense and organise our code. </p>
+<div class="left">
+  <p>Both arrays and objects store data whether it be strings or numbers, this helps us to condense and organise our code. </p>
   <p>To understand how we can access data from either arrays or objects, its important to know how the data is stored</p>
-
+</div>
   <strong><p>Array</p></strong>
   <p>An array is like a shelf, Imagine a book shelf where the books are placed in specific order, every book has a fixed position or index starting from 0. To get a book you have the know the exact position. </p>
   <pre><code class="code">
@@ -105,8 +109,8 @@
   </code></pre>
 
 <p>Say you want the second book on the shelf, you would ask for book 1 as arrays are 0 indexed. </p>
-<p>Object</p>
-<p>A object is like a filling cabinet where each book is labelled instead of numbered, to access something you dont need to know the order, you just need to know the key or label.</p>
+<strong><p>Object</p></strong>
+<p>An object is like a filling cabinet where each book is labelled instead of numbered, to access something you dont need to know the order, you just need to know the key or label.</p>
 
 <pre><code class="code">
   let bookCabinet = {
@@ -118,11 +122,11 @@
     let book = bookCabinet["Russia"];
   
 </code></pre>
-
+<div class="left">
 <p>So using the key you can then get out the variable stored inside of it. </p>
 <h2>Explain what functions are and why they are helpful.</h2>
 <p>To reuse the code from above as you do in functions,  I can now call the function and have the entire process repeat again, wherever I want in my code instead of writing it out again and again (which could cause many mistakes).</p>
-
+</div>
 <pre><code class="code"> 
   hasDirtyClothes() 
 </code></pre>
