@@ -157,11 +157,13 @@ nav ul li a:hover {
 
 
 
-.photo-1, .photo-2, .photo-3 {
+.photos {
   border-radius: 10px;
   box-sizing: border-box;
-  max-width: 100%;
+  width: 100%;
   height: auto; 
+  padding: 5px;
+  object-fit: cover;
  
 }
 
@@ -173,7 +175,11 @@ nav ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
-  object-fit: cover;
+  grid-template-rows: auto auto;
+}
+
+.photos:nth-child(2) {
+  grid-row: span 2; 
 }
 
 h2 {
