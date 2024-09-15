@@ -2,10 +2,11 @@
   --color-blue: #013D5A;
   --color-white: #FCF3E3;
   --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-secondary: "Merriweather", serif;
  }
 
  body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--font);
   line-height: 1.6;
   margin: 0;
   display: flex;
@@ -45,21 +46,22 @@ margin-bottom: 10px;
   font-size: 24px;
   text-align: center;
   flex: 1;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
+  z-index: 2;
   
 }
 
 nav {   
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 2;
   top: 0;
   left: 0; 
   display: flex;
   align-items: center;
   padding:  50px;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   flex-wrap: wrap;
   overflow-x: hidden; 
