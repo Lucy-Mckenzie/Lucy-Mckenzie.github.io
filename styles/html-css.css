@@ -38,7 +38,11 @@ h1:not(.logo), h2, h3 {
 
 p {
   margin-bottom: 10px;
+  display: inline-block;
+  text-align: left;
 }
+  
+
 
 .intro, .analogy, .summary {
   margin-bottom: 20px;

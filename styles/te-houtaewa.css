@@ -3,13 +3,44 @@
   --color-white: #FCF3E3;
   --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
- .main {
-  margin-top: 120px
+
+body {
+  font-family: var(--font);
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  padding: 0 25px;
+  word-wrap: break-word;;
+  background-color: var(--color-white);
+  margin-bottom: 20px;
  }
 
- body {
-  background-color: var(--color-white);
- }
+
+.container {
+width: 60%;
+text-align: center;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+margin-top: 150px;
+border: 1px solid slategray;
+box-shadow: 5px 5px 5px slategray;
+border-radius: 5px;
+}
+
+ h2 {
+color: #333;
+text-decoration: underline;
+}
+
+p {
+margin-bottom: 10px;
+display: inline-block;
+text-align: left;
+}
+
  
  .logo {
   color: var(--color-blue);     

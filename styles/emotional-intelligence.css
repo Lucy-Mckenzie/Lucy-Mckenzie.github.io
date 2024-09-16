@@ -27,6 +27,11 @@
 
 }
 
+p {
+  display: inline-block;
+  text-align: left;
+}
+
 h1:not(.logo), h2 {
   color: #333;
   text-decoration: underline;

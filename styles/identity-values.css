@@ -37,6 +37,8 @@ body {
   
   p {
   margin-bottom: 10px;
+  display: inline-block;
+  text-align: left;
   }
 
   .logo {
