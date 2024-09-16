@@ -49,6 +49,8 @@ body {
     flex: 1;
     font-family: var(--font-secondary);
     font-weight: 300;
+    z-index: 2;
+    
   }
   
   nav {   
@@ -71,10 +73,9 @@ body {
     display: flex;
     align-items: baseline;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 10px 20px;
     width: 100%;
     margin-bottom: 200px;
-    
   }
   
   nav ul {
@@ -125,7 +126,7 @@ body {
     align-items: baseline;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font: var(--font-secondary);
+    font: var(--font);
     font-weight: 300;
   }
   
@@ -162,7 +163,7 @@ body {
     color: var(--color-white);
   }
   
-  .dropdown:hover .dropdown-content  {
+  .dropdown:hover .dropdown-content {
     display: block;
   }
   
@@ -197,4 +198,4 @@ body {
     .nav-container {
       padding: 10px; 
     }
-  }
+  }  
