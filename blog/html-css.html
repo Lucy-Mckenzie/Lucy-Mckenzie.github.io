@@ -10,42 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Understanding Inline, Inline-Block and block in CSS</title>
   </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-          <h1 class="logo">Lucy Mckenzie</h1>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Lucy Mckenzie</h1>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
         <li class="dropdown">
-          <button class="dropbtn">Human skills <span class="arrow-small">&#10597;</span></button>
-        <div class="dropdown-content">
-          <a href="learning-plan.html"><em>Learning plan</em></a>
-          <a href="identity-values.html"><em>Identity values</em></a>
-          <a href="emotional-intelligence.html"><em>Emotional intelligence</em></a>
-          <a href="neuroplasticity.html"><em>Neuroplasticity & Growth mindset</em></a>
-          <a href="te-whare-tapa-wha.html"><em>Te whare tapa wha</em></a>
-        </div>
-        </li>
-        <li class="dropdown">
-          <button class="dropbtn">Technical blogs <span class="arrow-small">&#10597;</span></button>
-           <div class="dropdown-content">
-        <a href="html-css.html"><em>(HTML-CSS)</em></a>
-        <a href="javascript-dom.html"><em>(JAVASCRIPT)</em></a>
+  <button class="dropbtn">Human skills <span class="arrow-small">&#10597;</span></button>
+    <div class="dropdown-content">
+      <a href="learning-plan.html"><em>Learning plan</em></a>
+      <a href="identity-values.html"><em>Identity values</em></a>
+      <a href="emotional-intelligence.html"><em>Emotional intelligence</em></a>
+      <a href="neuroplasticity.html"><em>Neuroplasticity & Growth mindset</em></a>
+      <a href="te-whare-tapa-wha.html"><em>Te whare tapa wha</em></a>
+    </div>
+      </li>
+      <li class="dropdown">
+  <button class="dropbtn">Technical blogs <span class="arrow-small">&#10597;</span></button>
+    <div class="dropdown-content">
+      <a href="html-css.html"><em>(HTML-CSS)</em></a>
+      <a href="javascript-dom.html"><em>(JAVASCRIPT)</em></a>
          </div>
        </li>
       </ul>
     </div>
-    </nav>
-    <div class="container">
+  </nav>
+  <div class="container">
     <h1>What does it mean to understand inline, inline-block and block?</h1>
-    <div class="intro">
-      <p>Understanding the differences between inline, inline block and block. display properties in CSS  are crucial for controlling the layout of your HTML webpage. Think of these as different ways you can arrange items on a shelf.  </p>
-      <p> By the end of this blog you should be able to customise your HTML using these properties. </p>
-    </div>
+  <div class="intro">
+      <p>
+        Understanding the differences between inline, inline block and block. display properties in CSS  are crucial for controlling the layout of your HTML webpage. Think of these as different ways you can arrange items on a shelf. 
+      </p>
+      <p> 
+        By the end of this blog you should be able to customise your HTML using these properties. 
+      </p>
+  </div>
     <h2>Inline</h2>
-    <p>First, we’ll start with inline. Inline displays an element as an inline element where any height and width properties have no effect. When something is displayed inline, it doesn’t push other items to the next line. Instead, it stays right where it is, alongside other items, just like text in a sentence.</p>
-    <div class="example">
+    <p>
+      First, we’ll start with inline. Inline displays an element as an inline element where any height and width properties have no effect. When something is displayed inline, it doesn’t push other items to the next line. Instead, it stays right where it is, alongside other items, just like text in a sentence.
+    </p>
+  <div class="example">
       <p>Examples of inline elements:</p>
       <ul>
           <li><code>&lt;span&gt;</code></li>
@@ -58,9 +64,13 @@
       </ul>
   </div>
   <h2>Inline-block</h2>
-  <p>This is essentially the same thing as inline, except you have full control over height and width properties. This is useful when creating layouts where elements need to be inline but also require specific dimensions. </p>
+    <p>
+      This is essentially the same thing as inline, except you have full control over height and width properties. This is useful when creating layouts where elements need to be inline but also require specific dimensions. 
+    </p>
   <h2>Block</h2>
-  <p>Block elements start on a new line and take up the full width available. They do not allow other elements to sit on the same line. Imagine putting a big box on a shelf—everything else has to move to a new shelf because the box takes up the whole row.</p>
+  <p>
+    Block elements start on a new line and take up the full width available. They do not allow other elements to sit on the same line. Imagine putting a big box on a shelf—everything else has to move to a new shelf because the box takes up the whole row.
+  </p>
   <div class="example">
       <p>Examples of block elements:</p>
       <ul>
@@ -69,22 +79,32 @@
           <li><code>&lt;p&gt;</code></li>
           <li><code>&lt;section&gt;</code></li>
       </ul>
-  </div>
+   </div>
   <h3>Analogy</h3>
-  <div class="analogy">
-      <p>Another way to understand inline, block, and inline-block is to imagine you're at a tree planting day in your local town with friends.</p>
+   <div class="analogy">
+      <p>
+        Another way to understand inline, block, and inline-block is to imagine you're at a tree planting day in your local town with friends.
+      </p>
       <ul>
-          <li><strong>Inline:</strong> One friend plants her tree next to yours, but she has no control over the width or height. This is like planting inline.</li>
-          <li><strong>Inline-block:</strong> Another friend, whose dad is running the event, picks how big or small her tree is but still plants it next to yours. This is inline-block.</li>
-          <li><strong>Block:</strong> Your brother plants a tree that takes up the full width of the row, pushing everything else to the next row. This is block.</li>
+          <li>
+            <strong>Inline:</strong> One friend plants her tree next to yours, but she has no control over the width or height. This is like planting inline.
+          </li>
+          <li>
+            <strong>Inline-block:</strong> Another friend, whose dad is running the event, picks how big or small her tree is but still plants it next to yours. This is inline-block.
+          </li>
+          <li>
+            <strong>Block:</strong> Your brother plants a tree that takes up the full width of the row, pushing everything else to the next row. This is block.
+          </li>
       </ul>
   </div>
 
   <h3>To Summarize</h3>
   <div class="summary">
-      <p>Inline, inline-block, and block are essential building blocks of CSS for design and development. They help you space, organize, and structure your HTML webpage effectively.</p>
-  </div>
- </div>
+      <p>
+        Inline, inline-block, and block are essential building blocks of CSS for design and development. They help you space, organize, and structure your HTML webpage effectively.
+      </p>
+    </div>
+   </div>
   </body>
 </html>
 
