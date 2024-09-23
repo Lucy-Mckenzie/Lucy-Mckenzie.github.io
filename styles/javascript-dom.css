@@ -1,7 +1,7 @@
 :root {
   --color-blue: #013D5A;
   --color-white: #FCF3E3;
-  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font: "Raleway", sans-serif;
   --font-secondary: "Merriweather", serif;
  }
  
@@ -17,6 +17,7 @@ body {
   word-wrap: break-word;
   background-color: var(--color-white);
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .code {
@@ -58,7 +59,7 @@ border-radius: 5px;
 }
 
 
-h1:not(.logo), h2 {
+ h2 {
 color: #333;
 text-decoration: underline;
 }
