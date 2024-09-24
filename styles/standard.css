@@ -7,12 +7,12 @@
 
  body {
   font-family: var(--font);
+  line-height: 1.6;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-  margin-bottom: 30px;
   font-weight: 300;
 }
 
@@ -25,7 +25,7 @@
   border: 1px solid slategray;
   box-shadow: 5px 5px 5px slategray;
   border-radius: 5px;
-
+  margin-bottom: 40px;
 }
 
 p {
@@ -33,25 +33,13 @@ p {
   text-align: left;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 18px;
-  text-align: left;
+ h2 {
+  color: #333;
+  text-decoration: underline;
 }
 
-th, td {
-  padding: 12px;
-  border: 1px solid slategray;
-}
-
-th {
-  background-color: #f4f4f4;
-  font-weight: bold;
-}
-
-td {
-  vertical-align: top;
+h1 {
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -88,7 +76,7 @@ nav {
   max-width: 1200px;
   margin: 10px 20px;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 230px;
 }
 
 nav ul {
